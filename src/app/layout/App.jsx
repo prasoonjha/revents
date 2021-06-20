@@ -1,12 +1,18 @@
-import { Button } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
+import NavBar from '../../features/nav/NavBar';
+import EventDashboard from '../../features/events/eventDashboard/EventDashboard';
 import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Revents</h1>
-      <Button icon='facebook f' circular color='blue'/>
-    </div>
+    <>
+      <NavBar/>
+      
+      <Container class='main'>
+        <EventDashboard/>
+      </Container>
+      
+    </>
   );
 }
 
